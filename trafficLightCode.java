@@ -35,23 +35,7 @@ class HelloWorld {
         do {
             t = scn.nextInt();
             if (t == 1) {
-                System.out.println("Plese enter the total seconds for which you want to switch on the Traffic lights:"); // Time
-                                                                                                                         // interval
-                                                                                                                         // of
-                                                                                                                         // lights
-                                                                                                                         // can
-                                                                                                                         // be
-                                                                                                                         // varied,
-                                                                                                                         // currently
-                                                                                                                         // for
-                                                                                                                         // viewing
-                                                                                                                         // purpose
-                                                                                                                         // it
-                                                                                                                         // is
-                                                                                                                         // set
-                                                                                                                         // in
-                                                                                                                         // seconds.
-
+                System.out.println("Plese enter the total seconds for which you want to switch on the Traffic lights:"); //Time interval of lights can be varied, currently for viewing purpose it is set in seconds.
                 System.out.println("Plese enter the time limit for Red light in Seconds:");
                 int rt = scn.nextInt();
 

@@ -10,10 +10,10 @@ public class Main{
 		System.out.println("It's time for Tic Tac Toe");
 		System.out.println("***************************");
 		System.out.println();
-        System.out.println("Welcome Player1 & Player2!!");
-        System.out.println();
+        	System.out.println("Welcome Player1 & Player2!!");
+        	System.out.println();
 		
-        rules(board);
+        	rules(board);
         
 		while(true){
 			player1Turn(board);
@@ -148,17 +148,17 @@ public class Main{
 	
 	public static void player1Turn(char board[][]){
 		System.out.println("Player 1 your turn: Press the key");
-        System.out.println();
+        	System.out.println();
 		Scanner scn = new Scanner(System.in);
 		String player1Input;
 		while(true){
-            player1Input = scn.nextLine();
-            System.out.println();
+            		player1Input = scn.nextLine();
+            		System.out.println();
 			if(isValidMove(board,player1Input)){
 				break;
 			}else{
 				System.out.println(player1Input + " is not a valid move");
-                System.out.println();
+                		System.out.println();
 			}
 		}
 		movePosition(board,player1Input,'X');
@@ -166,17 +166,17 @@ public class Main{
 	
 	public static void player2Turn(char board[][]){
 		System.out.println("Player 2 your turn: Press the key");
-        System.out.println();
+        	System.out.println();
 		Scanner scn = new Scanner(System.in);
 		String player2Input;
 		while(true){
-            player2Input = scn.nextLine();
-            System.out.println();
+            		player2Input = scn.nextLine();
+            		System.out.println();
 			if(isValidMove(board,player2Input)){
 				break;
 			}else{
 				System.out.println(player2Input + " is not a valid move");
-                System.out.println();
+                		System.out.println();
 			}
 		}
 		movePosition(board,player2Input,'O');
@@ -184,26 +184,26 @@ public class Main{
 	
 	public static boolean isValidMove(char[][] board, String playerInput){
 		switch(playerInput){
-            case "1" :
-                return (board[0][0] == ' ');
-            case "2" :
-                return (board[0][1] == ' ');
-            case "3" :
-                return (board[0][2] == ' ');
-            case "4" :
-                return (board[1][0] == ' ');
-            case "5" :
-                return (board[1][1] == ' ');
-            case "6" :
-                return (board[1][2] == ' ');
-            case "7" :
-                return (board[2][0] == ' ');
-            case "8" :
-                return (board[2][1] == ' ');
-            case "9" :
-                return (board[2][2] == ' ');
-            default :
-                return false;
+            		case "1" :
+                		return (board[0][0] == ' ');
+            		case "2" :
+                		return (board[0][1] == ' ');
+            		case "3" :
+                		return (board[0][2] == ' ');
+            		case "4" :
+                		return (board[1][0] == ' ');
+            		case "5" :
+                		return (board[1][1] == ' ');
+            		case "6" :
+                		return (board[1][2] == ' ');
+            		case "7" :
+                		return (board[2][0] == ' ');
+            		case "8" :
+                		return (board[2][1] == ' ');
+            		case "9" :
+                		return (board[2][2] == ' ');
+            		default :
+                		return false;
 		}
 	}
 	
@@ -211,17 +211,17 @@ public class Main{
 		if(winningCond(board,'X')){
 			printBoard(board);
 			System.out.println("Player 1 wins");
-            System.out.println();
-            System.out.println("***************************");
-            System.out.println();
+            		System.out.println();
+            		System.out.println("***************************");
+            		System.out.println();
 			return true;
 		}
 		if(winningCond(board,'O')){
 			printBoard(board);
 			System.out.println("Player 2 wins");
-            System.out.println();
-            System.out.println("***************************");
-            System.out.println();
+		    	System.out.println();
+            		System.out.println("***************************");
+            		System.out.println();
 			return true;
 		}
 		for(int i = 0; i < board.length; i++){
@@ -233,9 +233,9 @@ public class Main{
 		}
 		printBoard(board);
 		System.out.println("The game ended in tie");
-        System.out.println();
-        System.out.println("***************************");
-        System.out.println();
+        	System.out.println();
+        	System.out.println("***************************");
+        	System.out.println();
 		return true;
 	}
     
@@ -251,14 +251,14 @@ public class Main{
 			System.out.println("******************************************************");
 			return false;
 		}else if(num == 1){
-            char[][] board = {{' ',' ',' '},
-							 {' ',' ',' '},
-							 {' ',' ',' '}};
+            		char[][] board = {{' ',' ',' '},
+					  {' ',' ',' '},
+					  {' ',' ',' '}};
 			System.out.println();
 			System.out.println("******************************************************");
 			System.out.println();
-        	System.out.println("Welcome Player1 & Player2!!");
-        	System.out.println();
+        		System.out.println("Welcome Player1 & Player2!!");
+        		System.out.println();
 			System.out.println("Hope you already know the rules, so let's proceed towards game");
 			System.out.println();
 			System.out.println("***************************");
@@ -277,11 +277,11 @@ public class Main{
 				printBoard(board);
 			}
 			return true;
-        }else{
-            System.out.println("You are pressing the wrong key");
-            System.out.println();
+        	}else{
+            		System.out.println("You are pressing the wrong key");
+            		System.out.println();
 			return true;
-        }
+        	}
     }
     
 }
